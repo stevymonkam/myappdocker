@@ -10,4 +10,4 @@ RUN ng build
 
 FROM nginx as runtime
 COPY --from=build /app/dist/myappdocker /usr/share/nginx/html
-CMD ["npm", "server.js"]
+
